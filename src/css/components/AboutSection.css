@@ -1,0 +1,88 @@
+.about-section {
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.about-section-header {
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF6060;
+    color: white;
+    padding: 6px 12px;
+    z-index: 2;
+}
+
+.about-section-header-title {
+    margin: 0;
+}
+
+.about-section-header-open {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.about-section-header-arrow {
+    color: white;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.about-section-content {
+    display: none;
+    border-radius: 5px;
+    background-color: #F7F7F7;
+    padding: 12px;
+    transform: translate(0, -5px);
+    z-index: 1;
+}
+
+.open {
+    display: block;
+}
+
+.about-section-content-text {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FF6060;
+}
+
+.equipment-list {
+    list-style: none;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FF6060;
+    padding: 0;
+}
+
+.equipment-list-element {
+    margin: 0;
+}
+
+@media screen and (min-width: 1440px) {
+    .about-section-header {
+        padding: 10px 18px;
+    }
+    .about-section-content {
+        padding: 26px 18px;
+    }
+    .about-section-content-text, .equipment-list, .about-section-header-title {
+        font-size: 24px;
+    }
+}

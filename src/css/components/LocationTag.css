@@ -1,0 +1,19 @@
+.tag {
+    background: #FF6060;
+    width: max-content;
+    border-radius: 5px;
+    padding: 6px 32px;
+}
+
+.tag-text {
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1440px) {
+    .tag-text {
+        font-size: 14px;
+    }
+}

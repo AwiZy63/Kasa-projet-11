@@ -1,0 +1,161 @@
+.location-informations-container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.location-informations-wrapper-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.location-location {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FF6060;
+    margin: 10px 0;
+}
+
+.location-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.location-informations-wrapper-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.location-stars {
+    color: #E3E3E3 !important;
+}
+
+.location-stars.one .location-star:nth-child(-n + 1) {
+    color: #FF6060 !important;
+}
+
+.location-stars.two .location-star:nth-child(-n + 2) {
+    color: #FF6060 !important;
+}
+
+.location-stars.three .location-star:nth-child(-n + 3) {
+    color: #FF6060 !important;
+}
+
+.location-stars.four .location-star:nth-child(-n + 4) {
+    color: #FF6060 !important;
+}
+
+.location-stars.five .location-star:nth-child(-n + 5) {
+    color: #FF6060 !important;
+}
+
+.location-user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.location-user-name {
+    color: #FF6060;
+    text-align: right;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+
+.location-user-picture {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.image-handler-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.previous-handler-button {
+    left: 0;
+}
+
+.next-handler-button {
+    right: 0;
+}
+
+.next-arrow-icon, .previous-arrow-icon {
+    font-size: 32px;
+    color: white;
+}
+
+@media screen and (min-width: 1440px) {
+    .location-informations-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .location-title {
+        font-size: 36px;
+        margin-top: 0;
+    }
+
+    .location-location {
+        margin: 0;
+        font-weight: 500;
+        font-size: 18px;
+        color: #FF6060;
+        margin: 5px 0 10px;
+    }
+
+    .location-informations-wrapper-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 16px 0;
+        gap: 12px;
+    }
+    
+    .location-user-name {
+        font-size: 18px;
+    }
+
+    .location-stars {
+        font-size: 20px;
+    }
+    
+    .location-user-picture {
+        width: 50px;
+        height: 50px;
+    }
+
+    .location-desc {
+        display: flex;
+        gap: 76px;
+    }
+
+    .location-desc:nth-child(-n+2) {
+        width: 100%;
+    }
+}

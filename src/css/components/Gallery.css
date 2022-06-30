@@ -1,0 +1,15 @@
+.header-location-card {
+    height: 255px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+@media screen and (min-width: 1440px) {
+    .header-location-card {
+        height: 415px;
+    }
+}
