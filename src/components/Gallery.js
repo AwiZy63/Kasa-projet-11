@@ -23,10 +23,12 @@ export default function Gallery({ pictures }) {
     }
     return (
         <div style={{ backgroundImage: `url('${pictures[locationImageIndex]}')` }} className="header-location-card">
-            {pictures && pictures.length > 1 ? (
-                <button onClick={() => changePicture("previous")} className='image-handler-button previous-handler-button' type='button'><i className='fa-solid fa-angle-left previous-arrow-icon'></i></button>,
-                <button onClick={() => changePicture("next")} className='image-handler-button next-handler-button' type='button'><i className='fa-solid fa-angle-right next-arrow-icon'></i></button>)
-                : null}
-        </div>
+            {pictures && pictures.length > 1 ? <>
+                <button onClick={() => changePicture("previous")} className='image-handler-button previous-handler-button' type='button'><i className='fa-solid fa-angle-left previous-arrow-icon'></i></button>
+                <button onClick={() => changePicture("next")} className='image-handler-button next-handler-button' type='button'><i className='fa-solid fa-angle-right next-arrow-icon'></i></button>
+            </>
+                : null
+            }
+        </div >
     )
 }
