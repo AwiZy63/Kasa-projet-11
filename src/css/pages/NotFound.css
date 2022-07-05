@@ -26,7 +26,7 @@
     color: #FF6060;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 992px) {
     .notfound-container {
         min-height: calc(100vh - 148px);
     }

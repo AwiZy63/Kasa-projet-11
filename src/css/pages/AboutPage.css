@@ -9,7 +9,7 @@
     margin-bottom: 32px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 992px) {
     .header-about-card {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/aboutpage_card_header_img_desktop.png');
     }

@@ -23,7 +23,7 @@
 }
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 992px) {
     .footer-copyrights {
         font-size: 24px;
         margin: 0;

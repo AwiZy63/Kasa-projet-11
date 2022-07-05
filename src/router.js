@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {
     BrowserRouter as Router,
-    Routes as Switch,
+    Routes,
     Route,
     Navigate
 } from "react-router-dom";
@@ -24,13 +24,13 @@ export default function AppRouter() {
         <Router>
             <div className='page-wrapper'>
                 <NavBar currentLocation={currentPage} />
-                <Switch>
+                <Routes>
                     <Route exact path="/" element={<HomePage locations={locations} setCurrentPage={setCurrentPage} />} />
                     <Route exact path="/about" element={<AboutPage setCurrentPage={setCurrentPage} />} />
                     <Route exact path="/location/:id" element={<LocationPage locations={locations} setCurrentPage={setCurrentPage} />} />
                     <Route exact path="/404" element={<NotFound setCurrentPage={setCurrentPage} />} />
                     <Route path="*" element={<Navigate to={"/404"} replace />} />
-                </Switch>
+                </Routes>
             </div>
         </Router>
     )

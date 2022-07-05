@@ -8,7 +8,7 @@
     position: relative;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 992px) {
     .header-location-card {
         height: 415px;
     }

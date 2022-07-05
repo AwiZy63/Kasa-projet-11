@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import NavBar from '../components/NavBar';
 import '../css/pages/NotFound.css';
 
 export default function NotFound({ setCurrentPage }) {
